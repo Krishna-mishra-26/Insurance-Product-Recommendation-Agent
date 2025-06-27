@@ -1,0 +1,151 @@
+id,name,type,age_min,age_max,coverage,critical_illness,maternity,accident,co_pay,monthly_premium
+1,HealthShield Basic,Health,18,65,500000,No,No,No,20,850
+2,HealthShield Premium,Health,18,70,1000000,Yes,Yes,Yes,15,1500
+3,FamilyCare Plus,Health,25,60,750000,Yes,Yes,Yes,10,1200
+4,YoungPro Health,Health,18,35,600000,No,No,Yes,25,650
+5,SeniorCare Elite,Health,50,80,800000,Yes,No,Yes,20,1800
+6,CriticalShield,Critical Illness,18,65,1500000,Yes,No,No,0,800
+7,AccidentGuard Pro,Accident,18,70,300000,No,No,Yes,30,400
+8,MaternityBliss,Maternity,22,40,200000,No,Yes,No,10,600
+9,ComprehensiveCare,Health,18,75,2000000,Yes,Yes,Yes,5,2500
+10,EconomyHealth,Health,18,60,300000,No,No,No,40,450
+11,ExecutiveHealth,Health,30,65,1500000,Yes,Yes,Yes,10,2200
+12,StudentHealth,Health,18,25,400000,No,No,Yes,30,350
+13,WomenCare Special,Health,18,65,800000,Yes,Yes,No,15,1100
+14,HeartShield,Critical Illness,25,70,1000000,Yes,No,No,0,950
+15,CancerCare Plus,Critical Illness,30,75,2000000,Yes,No,No,0,1300
+16,FamilyAccident,Accident,18,65,500000,No,No,Yes,20,550
+17,TravelSafe Health,Health,18,70,600000,No,No,Yes,25,750
+18,PremiumFamily,Health,25,65,1200000,Yes,Yes,Yes,12,1800
+19,BasicAccident,Accident,18,60,200000,No,No,Yes,35,250
+20,EliteHealth Pro,Health,25,70,3000000,Yes,Yes,Yes,8,3200
+21,SeniorAccident,Accident,50,80,400000,No,No,Yes,25,600
+22,QuickCare Health,Health,18,50,500000,No,No,No,30,550
+23,CriticalPlus Elite,Critical Illness,18,65,2500000,Yes,No,No,0,1600
+24,MotherCare Premium,Maternity,20,42,350000,No,Yes,No,5,800
+25,UltraHealth,Health,18,75,5000000,Yes,Yes,Yes,5,4500
+26,DiabeteCare Special,Health,30,70,1800000,Yes,No,Yes,12,1950
+27,FamilyFirst Health,Health,18,80,2500000,Yes,Yes,Yes,8,2800
+28,YouthAdvantage,Health,16,30,650000,No,No,Yes,22,480
+29,SeniorSecure Plus,Health,55,85,1200000,Yes,No,Yes,18,2100
+30,CorporateHealth,Health,22,65,3500000,Yes,Yes,Yes,6,3800
+31,BudgetCare Basic,Health,18,60,250000,No,No,No,45,320
+32,PlatinumHealth Elite,Health,25,75,7500000,Yes,Yes,Yes,3,5200
+33,HeartCare Specialist,Critical Illness,35,80,3000000,Yes,No,No,0,1800
+34,CancerShield Advanced,Critical Illness,25,75,4000000,Yes,No,No,0,2200
+35,StrokeGuard Pro,Critical Illness,40,85,2500000,Yes,No,No,0,1650
+36,AccidentPro Max,Accident,18,75,800000,No,No,Yes,15,650
+37,TwoWheelerAccident,Accident,18,65,150000,No,No,Yes,40,180
+38,SportsAccident Cover,Accident,16,45,400000,No,No,Yes,25,380
+39,PregnancyCare Premium,Maternity,20,45,500000,No,Yes,No,8,950
+40,NewMother Support,Maternity,18,40,300000,No,Yes,No,12,720
+41,FertilityCare Plus,Maternity,22,38,250000,No,Yes,No,15,650
+42,MultiGeneration Plan,Health,0,100,1500000,Yes,Yes,Yes,10,2400
+43,StartupEmployee Health,Health,22,45,900000,Yes,No,Yes,20,980
+44,FreelancerCare,Health,18,65,700000,No,No,Yes,28,720
+45,RetirementHealth,Health,60,90,1100000,Yes,No,Yes,22,2600
+46,NRIHealth Global,Health,18,80,5000000,Yes,Yes,Yes,5,4200
+47,RuralHealth Basic,Health,18,70,350000,No,No,No,35,280
+48,UrbanProfessional,Health,25,60,2200000,Yes,Yes,Yes,12,2100
+49,WomenSpecial Care,Health,18,65,1300000,Yes,Yes,No,14,1350
+50,MenHealth Focus,Health,18,65,1100000,Yes,No,Yes,16,1050
+51,TeenHealth Starter,Health,13,19,300000,No,No,Yes,35,250
+52,CollegeStudent Care,Health,17,25,450000,No,No,Yes,30,320
+53,InternHealth Basic,Health,20,26,550000,No,No,Yes,32,380
+54,GraduateHealth Pro,Health,22,28,700000,Yes,No,Yes,25,520
+55,NewJobee Health,Health,22,30,800000,Yes,No,Yes,20,680
+56,CareerStarter Plus,Health,24,32,950000,Yes,Yes,Yes,18,850
+57,MiddleClass Family,Health,25,55,1300000,Yes,Yes,Yes,15,1450
+58,UpperMiddle Elite,Health,30,60,2800000,Yes,Yes,Yes,10,2650
+59,WealthyFamily Premium,Health,35,70,5500000,Yes,Yes,Yes,5,4800
+60,LuxuryHealth Diamond,Health,40,80,10000000,Yes,Yes,Yes,3,8500
+61,SuperRich Platinum,Health,30,75,15000000,Yes,Yes,Yes,2,12000
+62,SingleMother Support,Health,22,45,900000,Yes,Yes,No,18,980
+63,SingleFather Care,Health,25,50,850000,Yes,No,Yes,20,920
+64,DivorceeHealth Plan,Health,25,65,1100000,Yes,Yes,Yes,16,1180
+65,WidowCare Special,Health,30,80,950000,Yes,No,Yes,22,1050
+66,OrphanCare Support,Health,18,25,400000,No,No,Yes,35,280
+67,SeniorCitizen Basic,Health,60,85,600000,Yes,No,Yes,30,1800
+68,SeniorCitizen Premium,Health,65,90,1200000,Yes,No,Yes,25,2800
+69,ElderCare Elite,Health,70,95,1800000,Yes,No,Yes,20,3800
+70,SuperSenior Care,Health,75,100,2500000,Yes,No,Yes,18,4500
+71,Centenarian Special,Health,80,105,3000000,Yes,No,Yes,15,5200
+72,PreExisting Diabetes,Health,25,70,1200000,Yes,No,Yes,25,1850
+73,PreExisting Hypertension,Health,30,75,1100000,Yes,No,Yes,28,1750
+74,PreExisting Heart,Health,35,80,1500000,Yes,No,Yes,22,2200
+75,PreExisting Kidney,Health,30,75,1800000,Yes,No,Yes,20,2450
+76,PreExisting Cancer,Health,25,70,2500000,Yes,No,Yes,15,3200
+77,DisabilityCare Plus,Health,18,80,1300000,Yes,No,Yes,18,1650
+78,BlindnessCare Special,Health,18,75,900000,Yes,No,Yes,25,1200
+79,DeafnessCare Support,Health,18,75,800000,Yes,No,Yes,28,1050
+80,PhysicalDisability Aid,Health,18,70,1100000,Yes,No,Yes,22,1380
+81,MentalHealth Support,Health,18,65,700000,Yes,No,No,30,850
+82,AutismCare Special,Health,5,50,600000,Yes,No,Yes,25,720
+83,PregnancyFirst Timer,Maternity,18,35,350000,No,Yes,No,12,750
+84,PregnancySecond Child,Maternity,22,40,400000,No,Yes,No,10,820
+85,PregnancyThird Child,Maternity,25,42,450000,No,Yes,No,8,890
+86,HighRisk Pregnancy,Maternity,20,45,600000,No,Yes,No,5,1200
+87,TwinPregnancy Care,Maternity,22,40,500000,No,Yes,No,8,1050
+88,IVF Pregnancy Support,Maternity,25,42,550000,No,Yes,No,6,1150
+89,AdoptionCare Support,Maternity,25,50,300000,No,Yes,No,15,650
+90,SurrogacyCare Plan,Maternity,22,45,400000,No,Yes,No,10,850
+91,PostPartum Care,Maternity,20,45,250000,No,Yes,No,18,580
+92,NewbornCare First,Health,0,5,200000,Yes,No,No,20,450
+93,ToddlerCare Plus,Health,1,8,350000,Yes,No,Yes,25,380
+94,ChildHealth Basic,Health,5,15,450000,Yes,No,Yes,22,420
+95,ChildHealth Premium,Health,5,18,650000,Yes,No,Yes,18,580
+96,SchoolChild Care,Health,6,18,550000,Yes,No,Yes,20,480
+97,AdolescentHealth,Health,13,19,600000,Yes,No,Yes,18,520
+98,SportsCritical Elite,Critical Illness,18,50,3500000,Yes,No,No,0,2150
+99,BusinessExecutive Critical,Critical Illness,30,65,5000000,Yes,No,No,0,2850
+100,PoliticianCritical Care,Critical Illness,35,75,8000000,Yes,No,No,0,4200
+101,CelebrityCritical Elite,Critical Illness,25,70,12000000,Yes,No,No,0,6500
+102,AthleteCritical Pro,Critical Illness,18,45,4500000,Yes,No,No,0,2650
+103,SoldierCritical Defense,Critical Illness,18,55,3000000,Yes,No,No,0,1850
+104,PilotCritical Aviation,Critical Illness,22,60,6000000,Yes,No,No,0,3200
+105,DoctorCritical Medical,Critical Illness,25,70,4000000,Yes,No,No,0,2450
+106,TeacherCritical Education,Critical Illness,25,65,2500000,Yes,No,No,0,1650
+107,EngineerCritical Tech,Critical Illness,22,65,3500000,Yes,No,No,0,2150
+108,LawyerCritical Legal,Critical Illness,25,70,4500000,Yes,No,No,0,2750
+109,BikerAccident Pro,Accident,18,60,600000,No,No,Yes,20,420
+110,CarDriverAccident,Accident,18,70,800000,No,No,Yes,18,580
+111,TruckDriverAccident,Accident,21,65,1200000,No,No,Yes,15,850
+112,TaxiDriverAccident,Accident,21,70,900000,No,No,Yes,18,680
+113,BusDriverAccident,Accident,25,65,1500000,No,No,Yes,12,950
+114,DeliveryBoyAccident,Accident,18,45,500000,No,No,Yes,25,380
+115,CourierAccident Care,Accident,18,50,600000,No,No,Yes,22,420
+116,UberDriverAccident,Accident,21,65,750000,No,No,Yes,20,520
+117,OlaDriverAccident,Accident,21,65,750000,No,No,Yes,20,520
+118,AutoDriverAccident,Accident,18,70,400000,No,No,Yes,28,320
+119,CyclistAccident Care,Accident,16,70,300000,No,No,Yes,30,250
+120,PedestrianAccident,Accident,16,80,350000,No,No,Yes,28,280
+121,WorkplaceAccident,Accident,18,65,800000,No,No,Yes,18,580
+122,ConstructionAccident,Accident,18,60,1200000,No,No,Yes,15,850
+123,FactoryAccident Care,Accident,18,65,900000,No,No,Yes,18,650
+124,MiningAccident Pro,Accident,21,55,1500000,No,No,Yes,12,1050
+125,MarinersAccident,Accident,18,60,1100000,No,No,Yes,15,780
+126,AviationAccident,Accident,22,65,2000000,No,No,Yes,10,1200
+127,RailwayAccident,Accident,18,65,800000,No,No,Yes,18,580
+128,PoliceAccident Duty,Accident,21,58,1500000,No,No,Yes,12,950
+129,FirefighterAccident,Accident,21,55,1800000,No,No,Yes,10,1150
+130,ArmyAccident Defense,Accident,18,55,2500000,No,No,Yes,8,1450
+131,NavyAccident Marine,Accident,18,55,2200000,No,No,Yes,10,1320
+132,AirForceAccident Sky,Accident,18,55,2800000,No,No,Yes,8,1650
+133,TechWorkerHealth,Health,22,65,1500000,Yes,No,Yes,15,1350
+134,ITConsultantHealth,Health,25,60,1800000,Yes,No,Yes,12,1580
+135,SoftwareDeveloper,Health,22,55,1600000,Yes,No,Yes,14,1420
+136,DataScientistHealth,Health,24,60,2000000,Yes,No,Yes,10,1750
+137,CyberSecurityHealth,Health,25,65,2200000,Yes,No,Yes,12,1850
+138,CloudArchitectHealth,Health,28,65,2500000,Yes,No,Yes,10,2150
+139,DevOpsEngineerHealth,Health,25,60,1900000,Yes,No,Yes,12,1680
+140,ProductManagerHealth,Health,28,65,2300000,Yes,No,Yes,10,1950
+141,StartupFounderHealth,Health,25,55,3000000,Yes,Yes,Yes,8,2650
+142,EntrepreneurHealth,Health,25,65,3500000,Yes,Yes,Yes,6,3150
+143,InvestorHealth Elite,Health,30,70,5000000,Yes,Yes,Yes,5,4200
+144,VentureCapitalistHealth,Health,35,75,8000000,Yes,Yes,Yes,3,6500
+145,AngelInvestorHealth,Health,30,80,6000000,Yes,Yes,Yes,4,5200
+146,BankManagerHealth,Health,28,65,2200000,Yes,Yes,Yes,12,1850
+147,InsuranceAgentHealth,Health,25,70,1800000,Yes,Yes,Yes,15,1520
+148,StockBrokerHealth,Health,25,65,2500000,Yes,No,Yes,10,2150
+149,MutualFundManagerHealth,Health,30,65,3000000,Yes,Yes,Yes,8,2650
+150,FinancialPlannerHealth,Health,25,70,2000000,Yes,Yes,Yes,12,1750
