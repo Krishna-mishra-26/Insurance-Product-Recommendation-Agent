@@ -76,25 +76,14 @@ A sophisticated GenAI-powered insurance recommendation system that leverages adv
 
 ## 🔧 Installation & Setup
 
-### **Quick Start (Recommended)**
-```bash
-# 1. Navigate to project directory
-cd "DSW Internship Hackathon - AI Agent"
-
-# 2. Run automated setup
-setup.bat
-
-# 3. Launch the application
-LAUNCH_DEMO.bat
-```
 
 ### **Manual Installation**
 
 #### **Step 1: Environment Setup**
 ```bash
 # Clone or download the project
-git clone <repository-url>
-cd "DSW Internship Hackathon - AI Agent"
+gh repo clone Krishna-mishra-26/Insurance-Product-Recommendation-Agent
+cd "Insurance-Product-Recommendation-Agent"
 
 # Create virtual environment (optional but recommended)
 python -m venv venv
@@ -107,17 +96,13 @@ venv\Scripts\activate  # Windows
 # Install required packages
 pip install -r requirements.txt
 
-# Verify installation
-python -c "import streamlit; print('✅ Setup successful!')"
 ```
 
 #### **Step 3: Configuration**
 ```bash
-# Copy environment template
-copy .env.example .env  # Windows
-# cp .env.example .env    # Linux/Mac
+# Create environment (.env)
 
-# Edit .env file with your OpenAI API key (optional)
+# Edit .env file with your OpenAI API key 
 OPENAI_API_KEY=sk-your-api-key-here
 ```
 
@@ -126,53 +111,11 @@ OPENAI_API_KEY=sk-your-api-key-here
 # Start the Streamlit server
 streamlit run app.py
 
-# Alternative: Use the provided scripts
-run.bat              # Windows
-# ./run.sh           # Linux/Mac
 ```
 
-### **Docker Deployment (Advanced)**
-```dockerfile
-# Coming soon - Docker containerization
-# docker build -t insurance-ai-agent .
-# docker run -p 8501:8501 insurance-ai-agent
-```
 
-## 🚀 Running the Application
 
-### **Method 1: One-Click Launch** ⚡
-```bash
-# Double-click in Windows Explorer
-LAUNCH_DEMO.bat
 
-# Or run from command line
-.\LAUNCH_DEMO.bat
-```
-
-### **Method 2: Direct Streamlit** 🎯
-```bash
-# Standard Streamlit command
-streamlit run app.py
-
-# With custom configuration
-streamlit run app.py --server.port 8501 --server.address localhost
-```
-
-### **Method 3: Development Mode** 🔧
-```bash
-# Run with debugging enabled
-streamlit run app.py --logger.level debug
-
-# Auto-reload on file changes
-streamlit run app.py --server.fileWatcherType auto
-```
-
-### **Access Points**
-| Method | URL | Description |
-|--------|-----|-------------|
-| **Primary** | `http://localhost:8501` | Main application interface |
-| **Demo Page** | `demo.html` | Interactive landing page |
-| **Network** | `http://[your-ip]:8501` | LAN access for mobile devices |
 
 ## 💡 How to Use the System
 
@@ -181,7 +124,7 @@ streamlit run app.py --server.fileWatcherType auto
 2. **Access Interface**: Open browser to `http://localhost:8501`
 3. **Explore Features**: Follow the interactive guide
 
-### **� Query Input Methods**
+### ** Query Input Methods**
 
 #### **Method 1: Sample Queries** (Recommended for Demo)
 Click any of the 8 pre-configured sample query buttons:
@@ -272,26 +215,22 @@ graph TD
 - **Weighted Preferences**: Dynamically adjusts importance based on user context
 - **Optimization Algorithm**: Selects products maximizing overall utility score
 
-#### **📚 Learning Capabilities**
-- **Natural Language Understanding**: Improves query interpretation through AI
-- **Pattern Recognition**: Identifies user types and common requirement patterns
-- **Adaptive Responses**: Tailors explanations based on user sophistication level
 
 ### **System Architecture**
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    USER INTERFACE LAYER                        │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐             │
-│  │   Streamlit │ │   Dark UI   │ │ Interactive │             │
-│  │    App      │ │   Theme     │ │   Charts    │             │
-│  └─────────────┘ └─────────────┘ └─────────────┘             │
+│                    USER INTERFACE LAYER                         │
+│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐                │
+│  │   Streamlit │ │   Dark UI   │ │ Interactive │                │
+│  │    App      │ │   Theme     │ │   Charts    │                │
+│  └─────────────┘ └─────────────┘ └─────────────┘                │
 └─────────────────────────────────────────────────────────────────┘
            │                    │                    │
 ┌─────────────────────────────────────────────────────────────────┐
-│                   AI PROCESSING LAYER                          │
-│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐             │
-│  │   OpenAI    │ │  Fallback   │ │ Explanation │             │
+│                   AI PROCESSING LAYER                           │
+│  ┌─────────────┐ ┌─────────────┐ ┌─────────────┐                │
+│  │   OpenAI    │ │  Fallback   │ │ Explanation │                │
 │  │    GPT      │ │   Agent     │ │  Generator  │             │
 │  └─────────────┘ └─────────────┘ └─────────────┘             │
 └─────────────────────────────────────────────────────────────────┘
@@ -531,39 +470,7 @@ graph TD
 "Pregnant woman, 28, high-risk pregnancy, twins expected, comprehensive maternity coverage needed"
 ```
 
-### **📊 Query Processing Intelligence**
 
-The system demonstrates advanced natural language understanding by extracting:
-
-#### **Demographic Information**
-- **Age**: Numerical age or life stage indicators
-- **Gender**: Explicit or contextual gender identification
-- **Marital Status**: Single, married, divorced, widowed
-- **Family Size**: Number of dependents and children
-
-#### **Professional Context**
-- **Occupation**: Specific job roles and industry sectors
-- **Risk Level**: High-risk occupations and safety considerations
-- **Income Level**: Budget indicators and financial capacity
-- **Employment Status**: Student, employed, retired, unemployed
-
-#### **Health & Medical Context**
-- **Current Conditions**: Pre-existing medical conditions
-- **Health Risks**: Lifestyle and occupational health risks
-- **Treatment History**: Previous surgeries or ongoing treatments
-- **Family History**: Genetic predispositions and family medical history
-
-#### **Coverage Preferences**
-- **Insurance Types**: Health, accident, critical illness, maternity
-- **Coverage Amounts**: Desired protection levels
-- **Premium Budget**: Affordable monthly payment ranges
-- **Benefit Priorities**: Most important coverage features
-
-#### **Contextual Factors**
-- **Geographic Location**: Rural vs urban healthcare access
-- **Lifestyle Factors**: Travel, sports, high-risk activities
-- **Future Plans**: Family planning, career changes, retirement
-- **Previous Experience**: Claims history, insurance satisfaction
 
 ## 🏗️ Technical Implementation
 
@@ -613,15 +520,9 @@ DSW Internship Hackathon - AI Agent/
 ├── 🤖 genai_agent.py            # OpenAI integration & AI processing
 ├── 🔄 fallback_agent.py         # Rule-based fallback system
 ├── 📊 insurance_products.csv    # Product database (150+ products)
-├── 🎨 demo.html                 # Interactive demo landing page
-├── 📚 DEMO_GUIDE.md             # Comprehensive user guide
 ├── 🔧 requirements.txt          # Python dependencies
 ├── ⚙️ .env                      # Environment configuration
-├── 🚀 LAUNCH_DEMO.bat          # One-click launcher
-├── 🔧 setup.bat                # Automated setup script
-├── ▶️ run.bat                   # Application runner
 ├── 📝 README.md                # Documentation (this file)
-├── 📋 CHANGELOG.md             # Version history & updates
 └── 🎮 demo.py                  # CLI demo script
 ```
 
@@ -645,97 +546,7 @@ DSW Internship Hackathon - AI Agent/
 - **Rule-Based Fallback**: Ensures functionality without external AI services
 - **Scoring Algorithms**: Multi-dimensional relevance calculation
 
-### **🚀 Performance Optimizations**
 
-#### **Data Processing Efficiency**
-- **Vectorized Operations**: NumPy-based calculations for fast scoring
-- **Efficient Filtering**: Pandas query optimization for large datasets
-- **Memory Management**: Lazy loading and data caching strategies
-- **Batch Processing**: Multiple query handling with optimized response times
-
-#### **User Experience Optimizations**
-- **Instant Loading**: Pre-cached data and optimized asset delivery
-- **Responsive Design**: Mobile-first CSS with flexible layouts
-- **Progressive Enhancement**: Graceful degradation for older browsers
-- **Accessibility Features**: Screen reader support and keyboard navigation
-
-#### **AI Integration Optimizations**
-- **API Rate Limiting**: Intelligent request throttling and error handling
-- **Fallback Systems**: Seamless switching between AI and rule-based processing
-- **Response Caching**: Intelligent caching of common queries and responses
-- **Async Processing**: Non-blocking AI operations with loading indicators
-
-### **🔒 Security & Reliability**
-
-#### **Data Security Measures**
-- **API Key Protection**: Environment variable isolation and encryption
-- **Input Validation**: Comprehensive sanitization of user inputs
-- **Error Handling**: Graceful failure modes and user-friendly error messages
-- **Session Management**: Secure state handling without persistent storage
-
-#### **System Reliability Features**
-- **Fallback Mechanisms**: Multiple layers of backup functionality
-- **Error Recovery**: Automatic retry logic and alternative processing paths
-- **Performance Monitoring**: Real-time system health checks and metrics
-- **Scalability Design**: Architecture ready for multi-user deployment
-
-### **📈 Scalability Considerations**
-
-#### **Database Scalability**
-- **CSV to Database Migration**: Ready for PostgreSQL/MongoDB integration
-- **Index Optimization**: Efficient querying strategies for large datasets
-- **Data Partitioning**: Scalable data organization for growing product catalogs
-- **API Integration**: Framework for real-time insurance product feeds
-
-#### **Deployment Scalability**
-- **Container Readiness**: Docker containerization framework prepared
-- **Cloud Deployment**: AWS/Azure/GCP deployment configurations
-- **Load Balancing**: Multi-instance deployment capability
-- **CDN Integration**: Static asset optimization and global distribution
-
-## 🤖 AI Integration & Capabilities
-
-### **Advanced AI Features**
-
-#### **🧠 Natural Language Understanding**
-- **OpenAI GPT-3.5-turbo Integration**: State-of-the-art language model for query interpretation
-- **Context Awareness**: Understanding complex multi-parameter insurance requirements
-- **Intent Recognition**: Identifying user goals from conversational input
-- **Entity Extraction**: Automated identification of age, profession, medical conditions, budget
-
-#### **🎯 Intelligent Recommendation Logic**
-- **Goal-Based Decision Making**: Optimizes recommendations based on user-specific objectives
-- **Multi-Dimensional Scoring**: Combines relevance, affordability, coverage adequacy, and user preferences
-- **Dynamic Weighting**: Adjusts importance factors based on user context and requirements
-- **Utility Maximization**: Selects products that provide maximum value for individual situations
-
-#### **💬 Personalized Explanation Generation**
-- **Context-Aware Explanations**: Tailored reasoning based on user's specific situation
-- **Educational Content**: Explains insurance concepts in user-friendly language
-- **Comparative Analysis**: Detailed comparison logic between recommended products
-- **Decision Support**: Helps users understand trade-offs and make informed choices
-
-### **🔄 Fallback & Reliability Systems**
-
-#### **Rule-Based Intelligence**
-- **Comprehensive Fallback Logic**: Full functionality without external AI dependencies
-- **Pattern Matching**: Sophisticated rule-based query interpretation
-- **Heuristic Algorithms**: Pre-programmed decision trees for common scenarios
-- **Offline Capability**: Works completely offline with local processing
-
-#### **Hybrid AI Architecture**
-- **Seamless Integration**: Automatic switching between AI and rule-based processing
-- **Error Recovery**: Graceful handling of AI service interruptions
-- **Performance Optimization**: Best-of-both-worlds approach for speed and accuracy
-- **Cost Management**: Intelligent API usage to minimize costs while maximizing value
-
-### **📊 Machine Learning Enhancements**
-
-#### **Data-Driven Insights**
-- **Pattern Recognition**: Identifies common user types and requirement patterns
-- **Preference Learning**: Adapts recommendations based on user interaction patterns
-- **Continuous Improvement**: System learns from user feedback and interactions
-- **Predictive Analytics**: Anticipates user needs based on demographic and contextual factors
 
 #### **Advanced Scoring Algorithms**
 ```python
@@ -764,83 +575,6 @@ def calculate_relevance_score(product, user_preferences):
     return min(score, 10.0)  # Cap at 10.0
 ```
 
-### **🌐 API Integration Capabilities**
-
-#### **OpenAI API Integration**
-- **Robust Error Handling**: Comprehensive exception management and retry logic
-- **Rate Limiting**: Intelligent request throttling to avoid API limits
-- **Cost Optimization**: Efficient prompt engineering to minimize token usage
-- **Security**: Secure API key management and encrypted communications
-
-#### **Extensible Architecture**
-- **Multi-Provider Support**: Framework ready for Anthropic, Groq, and other AI providers
-- **Plugin System**: Easy integration of additional AI services and capabilities
-- **Modular Design**: Independent components for easy maintenance and updates
-- **Version Management**: Backward compatibility and smooth upgrade paths
-
-## 🎨 User Interface & Experience
-
-### **🌟 Modern Dark Theme Design**
-
-#### **Visual Design Philosophy**
-- **Professional Aesthetics**: Corporate-grade interface suitable for BFSI sector
-- **Dark Theme Optimization**: Reduced eye strain for extended usage sessions
-- **Gradient Accents**: Modern blue-to-purple gradients for visual appeal
-- **Minimalist Layout**: Clean, uncluttered design focusing on functionality
-
-#### **Interactive Elements**
-- **Animated Headers**: Eye-catching gradient text with subtle animations
-- **Glowing Borders**: Enhanced visual feedback for interactive components
-- **Hover Effects**: Smooth transitions and responsive visual feedback
-- **Loading Animations**: Professional loading indicators for AI processing
-
-### **📱 Responsive Design Features**
-
-#### **Cross-Device Compatibility**
-- **Desktop Optimization**: Full-featured experience on large screens
-- **Tablet Support**: Touch-friendly interface with optimized layouts
-- **Mobile Responsive**: Functional mobile experience with adapted controls
-- **Browser Compatibility**: Works across Chrome, Firefox, Safari, and Edge
-
-#### **Accessibility Features**
-- **Screen Reader Support**: Semantic HTML and ARIA labels
-- **Keyboard Navigation**: Full functionality without mouse interaction
-- **High Contrast Mode**: Enhanced visibility for visual impairments
-- **Font Scaling**: Responsive typography that scales with browser settings
-
-### **🎮 Interactive Components**
-
-#### **Smart Input System**
-- **Natural Language Text Box**: Free-form query input with intelligent parsing
-- **Sample Query Buttons**: 8 pre-configured scenarios for quick testing
-- **Auto-Complete Suggestions**: Intelligent query completion and suggestions
-- **Voice Input Ready**: Framework prepared for speech-to-text integration
-
-#### **Dynamic Control Panel**
-- **AI Recommendation Button**: Triggers intelligent analysis and processing
-- **Result Count Slider**: Adjustable from 1-10 recommendations
-- **Clear & Reset Function**: One-click session restart capability
-- **Export Options**: Ready for PDF/Excel export functionality
-
-#### **Advanced Data Visualization**
-- **Interactive Charts**: Plotly-powered responsive visualizations
-- **Product Comparison Matrix**: Side-by-side feature comparison
-- **Premium vs Coverage Scatter Plots**: Visual value analysis
-- **Benefit Distribution Charts**: Coverage breakdown visualizations
-
-### **🔧 User Experience Optimizations**
-
-#### **Performance Features**
-- **Instant Loading**: Sub-second initial page load times
-- **Real-time Updates**: Live data refresh without page reloads
-- **Smooth Animations**: 60fps transitions and visual effects
-- **Progressive Loading**: Content appears as it becomes available
-
-#### **Usability Enhancements**
-- **Intuitive Navigation**: Logical flow from query to recommendation
-- **Clear Visual Hierarchy**: Important information prominently displayed
-- **Contextual Help**: Integrated tips and guidance throughout interface
-- **Error Prevention**: Input validation and user-friendly error messages
 
 ### **📊 Information Architecture**
 
@@ -861,106 +595,7 @@ def calculate_relevance_score(product, user_preferences):
 └─────────────────┴───────────────────────────────────────────┘
 ```
 
-#### **Content Organization**
-- **Logical Information Flow**: Query → Analysis → Results → Comparison
-- **Scannable Layout**: Easy to skim and find relevant information
-- **Progressive Disclosure**: Advanced features available but not overwhelming
-- **Context-Sensitive Content**: Information adapts to user actions and results
 
-### **🎪 Interactive Demo Features**
-
-#### **Guided User Journey**
-- **Onboarding Flow**: First-time user guidance and feature introduction
-- **Sample Scenarios**: Curated examples showcasing system capabilities
-- **Progressive Complexity**: Simple to advanced query examples
-- **Success Indicators**: Clear feedback showing system effectiveness
-
-#### **Educational Components**
-- **Insurance Terminology**: Integrated glossary and explanations
-- **Decision Support Tools**: Guidance for understanding insurance concepts
-- **Comparison Education**: Teaching users how to evaluate insurance products
-- **Best Practices**: Tips for getting the most from insurance coverage
-
-## 📈 Future Enhancements & Roadmap
-
-### **🚀 Phase 2 Development (Q3 2025)**
-- **Real Insurance API Integration**: Live data feeds from major insurance providers
-- **Advanced ML Models**: Machine learning for improved recommendation accuracy
-- **User Feedback Loop**: Rating system for continuous learning and improvement
-- **Multi-language Support**: Hindi, Tamil, Bengali, and other Indian languages
-
-### **🎯 Phase 3 Features (Q4 2025)**
-- **Advanced Risk Assessment**: Comprehensive health and lifestyle risk analysis
-- **Claims Prediction**: AI-powered claims likelihood and cost estimation
-- **Document Processing**: OCR and AI analysis of medical reports and documents
-- **Mobile App Development**: Native iOS and Android applications
-
-### **🌐 Enterprise Features (2026)**
-- **Corporate Dashboard**: B2B features for insurance brokers and agents
-- **White-label Solutions**: Customizable interface for insurance companies
-- **Advanced Analytics**: Business intelligence and market trend analysis
-- **Integration Hub**: APIs for third-party insurance and fintech platforms
-
-## 🧪 Testing & Quality Assurance
-
-### **🔬 Testing Strategy**
-- **Unit Testing**: Comprehensive test coverage for all core functions
-- **Integration Testing**: End-to-end workflow validation
-- **Performance Testing**: Load testing and optimization validation
-- **User Acceptance Testing**: Real-world scenario validation
-
-### **📊 Quality Metrics**
-- **Code Coverage**: 85%+ test coverage across all modules
-- **Performance Benchmarks**: Sub-2-second response times for 95% of queries
-- **Accuracy Metrics**: 90%+ user satisfaction with recommendations
-- **Reliability**: 99.5% uptime with graceful fallback systems
-
-### **🔍 Testing Scenarios**
-```bash
-# Run comprehensive test suite
-python -m pytest tests/ -v --coverage
-
-# Performance testing
-python demo.py --performance-test
-
-# Load testing simulation
-python stress_test.py --concurrent-users 50
-```
-
-## 🛠️ Deployment & Production
-
-### **🌐 Cloud Deployment Options**
-
-#### **AWS Deployment**
-```bash
-# AWS ECS deployment with Docker
-docker build -t insurance-ai-agent .
-aws ecs create-service --service-name insurance-agent
-```
-
-#### **Azure Deployment**
-```bash
-# Azure Container Apps deployment
-az containerapp create --name insurance-agent --resource-group rg-insurance
-```
-
-#### **Google Cloud Deployment**
-```bash
-# GCP Cloud Run deployment
-gcloud run deploy insurance-agent --source .
-```
-
-### **🔧 Production Configuration**
-- **Environment Variables**: Secure API key management
-- **Database Migration**: PostgreSQL/MongoDB for production scale
-- **CDN Integration**: CloudFlare for global content delivery
-- **Monitoring**: Application performance monitoring and alerting
-
-### **📈 Scalability Planning**
-- **Auto-scaling**: Dynamic resource allocation based on demand
-- **Load Balancing**: Multi-instance deployment with traffic distribution
-- **Caching Strategy**: Redis for session and response caching
-- **Database Optimization**: Query optimization and indexing strategies
 
 ## 🔧 Troubleshooting & Support
 
@@ -994,69 +629,6 @@ python -m cProfile app.py  # Profile performance
 streamlit run app.py --server.maxUploadSize 100  # Limit upload size
 ```
 
-### **📞 Support Resources**
-- **Documentation**: Comprehensive guides in `DEMO_GUIDE.md`
-- **Video Tutorials**: Available on project repository
-- **Community Forums**: GitHub Discussions for community support
-- **Professional Support**: Enterprise support packages available
-
-### **🔍 Debugging Tools**
-```python
-# Enable debug mode
-import streamlit as st
-st.set_option('deprecation.showPyplotGlobalUse', False)
-st.set_option('logger.level', 'debug')
-
-# Performance monitoring
-import time
-start_time = time.time()
-# Your code here
-execution_time = time.time() - start_time
-st.write(f"Execution time: {execution_time:.2f} seconds")
-```
-
-## 📚 Documentation & Resources
-
-### **📖 Additional Documentation**
-- **[API Documentation](docs/api.md)**: Complete API reference
-- **[Development Guide](docs/development.md)**: Setup for contributors
-- **[Deployment Guide](docs/deployment.md)**: Production deployment instructions
-- **[User Manual](DEMO_GUIDE.md)**: Comprehensive user guide
-
-### **🎓 Learning Resources**
-- **Insurance Basics**: Educational content about insurance concepts
-- **AI in BFSI**: How artificial intelligence is transforming financial services
-- **Goal-Based Agents**: Understanding AI agent architectures
-- **Streamlit Development**: Advanced Streamlit features and best practices
-
-### **🔗 External Resources**
-- **[IRDAI Guidelines](https://www.irdai.gov.in/)**: Insurance regulatory information
-- **[OpenAI Documentation](https://platform.openai.com/docs)**: AI integration guidelines
-- **[Streamlit Community](https://discuss.streamlit.io/)**: Development community
-- **[Python Insurance Libraries](https://pypi.org/search/?q=insurance)**: Related tools
-
-## 🏆 Project Information
-
-### **🎯 Hackathon Details**
-- **Event**: DSW Internship Hackathon - AI Agent Challenge
-- **Category**: BFSI (Banking, Financial Services, and Insurance)
-- **Challenge**: Build an AI-powered recommendation system
-- **Timeline**: June 2025 Development Sprint
-
-### **👥 Development Team**
-- **Lead Developer**: AI Agent Specialist
-- **Architecture**: Goal-based AI system design
-- **Frontend**: Modern UI/UX with dark theme
-- **Backend**: Python-based recommendation engine
-- **AI Integration**: OpenAI GPT and fallback systems
-
-### **🏅 Project Achievements**
-- ✅ **Complete AI Agent Implementation**: Goal-based architecture with utility optimization
-- ✅ **Comprehensive Dataset**: 150+ insurance products across all categories
-- ✅ **Advanced UI/UX**: Professional dark theme with interactive visualizations
-- ✅ **Production-Ready Code**: Scalable, maintainable, and well-documented
-- ✅ **Robust Error Handling**: Fallback systems and graceful failure modes
-- ✅ **Performance Optimized**: Fast response times and efficient processing
 
 ### **📊 Project Statistics**
 | Metric | Value | Details |
@@ -1068,44 +640,6 @@ st.write(f"Execution time: {execution_time:.2f} seconds")
 | **Performance** | <2s | Sub-2-second response times |
 | **Compatibility** | 95%+ | Cross-platform and browser support |
 
-## 🛡️ Legal & Compliance
-
-### **📄 Disclaimer**
-This is a demo application created for educational and hackathon purposes. While the system demonstrates advanced AI capabilities for insurance recommendations, users should:
-
-- **Consult Professionals**: Always consult with licensed insurance professionals for actual policy decisions
-- **Verify Information**: Cross-reference all recommendations with official insurance provider data
-- **Understand Limitations**: The system provides suggestions, not definitive financial advice
-- **Data Privacy**: No personal data is stored or transmitted to external services
-
-### **🔒 Privacy & Security**
-- **Data Processing**: All processing occurs locally or through secure, encrypted channels
-- **API Security**: OpenAI API communications are encrypted and secure
-- **No Data Storage**: User queries and personal information are not permanently stored
-- **Compliance Ready**: Framework designed for GDPR and other privacy regulations
-
-### **⚖️ Regulatory Compliance**
-- **IRDAI Guidelines**: Follows Indian insurance regulatory standards
-- **Financial Services Compliance**: Adheres to BFSI sector best practices
-- **Consumer Protection**: Transparent recommendation logic and clear disclaimers
-- **Ethical AI**: Responsible AI practices with bias prevention measures
-
-## 📄 License & Attribution
-
-### **📜 License Information**
-This project is created for the **DSW Internship Hackathon - AI Agent Challenge** and is provided under an educational and demonstration license.
-
-### **🙏 Acknowledgments**
-- **OpenAI**: For providing advanced language model capabilities
-- **Streamlit Team**: For the excellent web application framework
-- **Python Community**: For the robust ecosystem of data science libraries
-- **BFSI Industry**: For inspiration and real-world use case validation
-
-### **📞 Contact Information**
-- **Project Repository**: [GitHub Repository Link]
-- **Documentation**: Available in project files and online
-- **Support**: Community support through project discussions
-- **Professional Inquiries**: Available for enterprise licensing and customization
 
 ---
 
